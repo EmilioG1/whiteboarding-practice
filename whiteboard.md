@@ -64,3 +64,9 @@ Prompt 3
 >Input: "aaabccdddda"
 
 >Output: "3ab2c4da"
+
+want to take a string. find how many times a letter occurs concurrently and compress them into a number with the letter appended
+
+take a string, split it, loop through to see how many occurences of each element
+maybe take out duplicates and put in another array?
+add a counter...
