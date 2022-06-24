@@ -23,6 +23,15 @@ function spaceSwap(str) {
 
 console.log(spaceSwap('Jasmine Ann Jones'))
 
+OR a refactored option w/ arrow function and ternary operator
+
+function spaceSwap(str) {
+  array = [];
+  newStr = str.split("")
+  newStr.forEach(i => (i === " ") ? array.push("%20") : array.push(i))
+  return array.join()
+};
+
 
 
 Promt 2
@@ -33,6 +42,9 @@ Promt 2
 >Input: [7, 9, "hi", 12, "hi" 7, 53]
 
 >Output: [7, 9, "hi", 12, 53]
+
+
+
 
 Promt 3
 ## Compressing Strings
