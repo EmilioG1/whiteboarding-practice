@@ -8,6 +8,23 @@ Promt 1
 
 >Output: "Jasmine%20Ann%20Jones"
 
+array = [];
+function spaceSwap(str) {
+  newStr = str.split("")
+  newStr.forEach(function(i) {
+    if (i === " ") {
+      array.push("%20")
+    } else {
+      array.push(i)
+    }
+  })
+  return array.join()
+};
+
+console.log(spaceSwap('Jasmine Ann Jones'))
+
+
+
 Promt 2
 ## Array Deduping
 * Write an algorithm that removes duplicates from an array. Do not use a function like filter() to solve this. Once you have solved the problem, demonstrate how it can be solved with filter(). Solve the problem with and without recursion.
