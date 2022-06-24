@@ -70,3 +70,26 @@ want to take a string. find how many times a letter occurs concurrently and comp
 take a string, split it, loop through to see how many occurences of each element
 maybe take out duplicates and put in another array?
 add a counter...
+
+Prompt 4
+## Checking for Uniqueness
+* Write an algorithm that determines whether all the elements in a string are unique. You may not convert the string into an array or use array methods to solve this problem. The algorithm should return a boolean.
+
+Example
+Input: "hello"
+
+Output: false
+
+Input: "copyright"
+
+Output: true
+
+take a string, cant turn it into array! includes can be used for strings
+for loop through the string
+initialize empty string
+if statement inside for loop
+if new string includes element in old string === false... add element to new string
+in separate if statement -> if string === new string then its true
+    since only the characters that don't repeat are added to the new string
+else its false... since any characters that match already added elements wont be included
+    thus it won't match

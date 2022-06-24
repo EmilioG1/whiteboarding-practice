@@ -1,17 +1,19 @@
-function comp(string) {
-  let array = string.split('');
-  let count = 1;
-  let final = '';
-
-  for (let i = 0; i <= array.length; i++) {
-    if (array[i] === array[i + 1]) {
-      count++;
-    } else {
-      final += count + array[i]
-      count = 1
+function unique(string) {
+  let notUnique = '';
+  for (let x = 0; x < string.length; x++) {
+    if (notUnique.includes(string[x]) === false) {
+      notUnique += string[x]
     }
   }
-  return final.replace(1, '')
+  console.log(notUnique)
+  if (string === notUnique) {
+    return true
+  } else {
+    return false
+  }
 }
 
-console.log(comp("aaabccdddda"))
+console.log(unique('hello'))
+// console.log(unique('copyright'))
+
+
