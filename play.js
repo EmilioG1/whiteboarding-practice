@@ -1,12 +1,17 @@
 function comp(string) {
-  array = string.split('');
+  let array = string.split('');
+  let count = 1;
+  let final = '';
 
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === array[j]) {
-    
+  for (let i = 0; i <= array.length; i++) {
+    if (array[i] === array[i + 1]) {
+      count++;
+    } else {
+      final += count + array[i]
+      count = 1
     }
   }
-  return num
+  return final.replace(1, '')
 }
 
 console.log(comp("aaabccdddda"))
